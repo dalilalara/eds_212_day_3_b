@@ -7,4 +7,42 @@ output: html_document
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
+library(tidyverse)
+library(palmerpenguins)
 ```
+
+### Creating and Working with Vectors
+
+### Make some vectors 
+
+```{r}
+marmots <- c("blue", "green", 4, "yellow")
+marmots
+
+# Check class of object 
+class(marmots)
+```
+
+### Numberic Vectors 
+```{r}
+pika <- c(12.4, 6.8, 2.9, 8.8, 8.5 )
+class(pika)
+
+# Scalar Multiplier
+scalar_pika <- 5.2 * pika
+scalar_pika
+
+#Be aware of whats getting stored and what is being reported 
+```
+
+```{r}
+bananas <- c(1, 2, 3, 4)
+apples <- c(6, 7, 8)
+
+bananas + apples 
+bananas - apples 
+
+#dot product (0)
+#bananas %*% apples 
+```
+
